@@ -1,18 +1,16 @@
 #include<stdio.h>
 
 /**
- * main - A program that that prints the alphabet in lowercase
+ * main - Print lowercase and uppercase alphabet
  * Return: 0
  */
 int main(void)
 {
 	char c;
 
-	for
-	(c = 'a'; c <= 'z'; c++)
-	{
+	for (c = "a"; c <= "z"; c++)
 	putchar(c);
-	}
+	for (c = "A"; c <= "Z"; c++)
 	putchar('\n');
 	return (0);
 	}
