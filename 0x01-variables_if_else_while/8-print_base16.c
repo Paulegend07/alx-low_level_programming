@@ -9,16 +9,16 @@
 int main(void)
 {
 	int n;
-	int m;
+	char c;
 
-	for (m = 0; m <= 9; m++)
-	{
-	putchar(m);
-	putchar((9 % 10) + '0');
-	}
-	for (n = 'a'; n <= 'f'; n++)
+	for (n = 0; n <= 9; n++)
 	{
 	putchar(n);
 	}
+	for (c = 'a'; c <= 'f'; c++)
+	{
+	putchar(c);
+	}
+	putchar('\n');
 	return (0);
 }
