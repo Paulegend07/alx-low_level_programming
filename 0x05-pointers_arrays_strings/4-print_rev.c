@@ -8,31 +8,18 @@
  */
 void print_rev(char *s)
 {
-	int length, i;
-	char *begin_ptr, *end_ptr, temp;
+	int longi = 0;
+	int o;
 
-	 print_rev(s);
-
-	begin_ptr = s;
-	end_ptr = s;
-
-	for (i = 0; i < (length - 1); i++)
+	while (*s != '\0')
 	{
-	end_ptr++;
-	for (i = 0; i < length / 2; i++)
-	{
-	temp = *end_ptr;
-	*end_ptr = *begin_ptr;
-	*begin_ptr = temp;
-
-	begin_ptr++;
-	end_ptr--;
+	longi++;
+	s++;
 	}
-	}
-	for (i = 0; i < length; i++)
+	for (o = longi; o > 0; o--)
 	{
-	_putchar(s[i]);
+	_putchar(*s);
+	s--;
 	}
 	_putchar('\n');
 }
-
