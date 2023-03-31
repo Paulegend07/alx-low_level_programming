@@ -14,10 +14,12 @@ char *cap_string(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-	if (i == 0)
-	s[i] = toupper(s[i]);
 	if (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == ',' || s[i] == ';' || s[i] == '.' || s[i] == '!' || s[i] == '?' || s[i] == '"' || s[i] == '(' || s[i] == ')' || s[i] == '{' || s[i] == '}')
-s[i + 1] = toupper(s[i + 1]);
+	if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+	{
+	s[i + 1] = s[i + 1] - 32;
+	}
+	}
 	}
 	return (s);
 }
