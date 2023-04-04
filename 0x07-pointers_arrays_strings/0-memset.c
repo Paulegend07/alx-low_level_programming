@@ -3,7 +3,7 @@
 
 /**
  * *_memset - function that fills memory with constant bytes
- * @s: String value
+ * @s: Pointer value
  * @b: character value
  * @n: integer value
  *Return: 0
