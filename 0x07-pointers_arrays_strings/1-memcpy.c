@@ -5,7 +5,7 @@
  * *_memcpy - function that copy area to memory
  *@dest: First pointer
  *@src: second pointer
- *n: integer value
+ *@n: integer value
 *Return: 0
 */
 
